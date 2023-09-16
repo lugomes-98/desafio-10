@@ -1,0 +1,293 @@
+body{
+    margin:0;
+}
+
+.maxwidth{
+    max-width: 90em;
+    
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+    background-color: #58555565;
+}
+
+.header_logo{
+    width: 5.9em;
+    height: 100%;
+    margin: 1em;
+}
+
+.header_nav{
+    background-color: initial;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-size: 1.8em;}
+
+
+.header_nav a{
+    color: rgba(2, 2, 2, 0.932);
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover{
+    background-color: #58555565;
+    text-align: center;
+    color: black;
+}
+
+ul{
+    margin: 0;
+}
+
+footer{
+    text-align: center;
+    display: block;
+}
+
+footer:hover{
+    background-color: rgb(138, 82, 93);
+    color: white;
+    
+}
+
+
+@media screen and (min-width: 48em){/*768px maior que*/
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+
+    .header_nav{
+        background-color: initial;
+    }
+
+
+    .header_nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+
+    .header_nav a{
+        color: var(--cor-site);
+        border-radius: 5px;
+    }
+
+
+    .header_nav a:hover{
+        background-color: rgb(58, 57, 57);
+        color: white;
+    }
+}
+.trailer{
+    background-color: #E4F2EB;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.5em;
+}
+
+
+.trailer div{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+
+.trailer_title{
+    margin-top: 0;
+    padding-top: .5em;
+    color: white;
+}
+
+
+.trailer h1{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+
+.trailer_paragrafo{
+    font-size: 1.1em;
+    color: white;
+}
+
+
+.trailer-botao{
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: rgb(138, 82, 93);
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.saiba-mais{
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: rgb(138, 82, 93);
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.saiba-mais:hover{
+    background-color:  rgb(58, 57, 57);
+    color: white;
+}
+
+
+.trailer-botao:hover:hover{
+    background-color:  rgb(58, 57, 57);
+    color: white;
+}
+
+iframe{
+    width: 40%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin:auto;
+}
+
+
+@media screen and (min-width: 48em){/*768px maior que*/
+
+
+    .trailer{
+        background-image: url(capa\ editada3.png);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: initial;
+    }
+
+
+    .trailer_paragrafo{
+        margin-bottom: 2em;
+    }
+
+
+}
+
+.main_content{
+    background-color: #58555565;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+.main_content div{
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+}
+
+
+.main_content_title{
+    color: black;
+}
+
+
+.icon_img{
+    width: 5.5em;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.col{
+    flex: 1 0 auto;
+    /*
+    flex-grow = 1
+    vai aumentar seu tamanho se houver espaÃ§o
+
+
+    flex-shrink = 0
+    nÃĢo quero que o elemento diminua
+
+
+    flex-basis = auto
+    vai depender do width do prÃģprio elemento
+    */
+    width: 100%;
+}
+
+
+.col-12{
+    width: 100%;
+}
+
+
+@media screen and (min-width: 48em){/*768px maior que*/
+    .col-6{
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 47em){
+    .trailer-botao{
+        display: none;
+    }
+
+    video{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: auto;
+    }
+
+    .main_content{
+        background-color: #58555565;
+    }
+
+    .trailer_paragrafo{
+        background-color: none;
+        color: black;
+        margin: 0;
+        width: 100%;
+        display: block;
+        text-align: justify;
+}
+
+    .trailer_title{
+        background-color: none;
+        color: black;
+        margin: 0;
+        width: 100%;
+}
+
+}
